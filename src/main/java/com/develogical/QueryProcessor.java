@@ -16,7 +16,7 @@ public class QueryProcessor {
         }
         String[] number_strs = query.split(":");
         String num_str = number_strs[number_strs.length-1];
-        String[] numbers = query.split(",");
+        String[] numbers = num_str.split(",");
         int max = 0;
         for (String num_s : numbers){
             int num = Integer.parseInt(num_s.substring(1));
